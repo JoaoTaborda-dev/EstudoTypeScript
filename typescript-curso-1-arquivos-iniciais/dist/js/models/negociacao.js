@@ -16,11 +16,6 @@ export class Negociacao {
         const date = new Date(dataString.replace(exp, ','));
         const quantidade = parseInt(quantidadeString);
         const valor = parseInt(valorString);
-        // const negociacao = new Negociacao(
-        //   this.inputData.valueAsDate,
-        //   this.inputQuantidade.valueAsNumber,
-        //   this.inputValor.valueAsNumber
-        //   );
         return new Negociacao(date, quantidade, valor);
     }
 }
